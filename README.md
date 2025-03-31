@@ -21,9 +21,12 @@ The DES algorithm is a legacy cryptography algorithm technique that was used to 
 ## Usage
 -----
 
-To use this implementation, simply clone the repository and import it into your Java project. You can then use the `DES` class to encrypt and decrypt data.
+To use this implementation, simply clone the repository and import it into your Java project. You can then use the `DES` class to encrypt and decrypt data. No external libraries are required. 
 
 This code is provided as-is, feel free to use any part. Please acknowledge my contribution by citing this repository if you happen to use it.
+### Example Usage
+
+Examples are provided in the main class
 
 ## Contributing
 If you'd like to contribute to this project, please fork the repository and submit a pull request. I'd be happy to review and merge your changes.
