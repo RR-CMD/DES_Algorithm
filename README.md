@@ -1,6 +1,6 @@
 
 # DES Encryption Algorithm Implementation
-=====================================
+--------
 
 This repository contains a Java implementation of the DES (Data Encryption Standard) encryption algorithm.
 
