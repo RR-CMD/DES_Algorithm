@@ -7,7 +7,7 @@ This repository contains a Java implementation of the DES (Data Encryption Stand
 ## Overview
 --------
 
-The DES algorithm is a legacy cryptography algorithm technique that was used to encrypt and decrypt 64-bit texts using 64-bit keys, it runs for 16 rounds making it more difficult to crack than other old techniques.
+The DES algorithm is a legacy cryptography algorithm technique that was used to encrypt and decrypt 64-bit texts using 64-bit keys, it runs for 16 rounds making it more difficult to crack than other legacy techniques.
 
 ## Features
 --------
