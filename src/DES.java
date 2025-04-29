@@ -8,15 +8,30 @@ public class DES {
 
 
     public DES(String key64, String text, boolean Binary) {
+        if((key64.length() != text.length()))
+        {
+            System.out.println("Make sure to enter both key and text as either 64 bits or 8 characters");
+            System.exit(0);
+        }
         intialText=text;
         if (Binary) {
-            keys = DES_Utility.generateKeys(key64);
-
-            this.text = DES_Tables.initialPermutation(text);
-
+            if(key64.length()==64 && text.length()==64 ) {
+                keys = DES_Utility.generateKeys(key64);
+                this.text = DES_Tables.initialPermutation(text);
+            }
+            else{
+                System.out.println("Entered values should be 64 bits");
+                System.exit(0);
+            }
         } else {
-            keys = DES_Utility.generateKeys(DES_Utility.stringToBinary(key64));
-            this.text = DES_Tables.initialPermutation(DES_Utility.stringToBinary(text));
+            if(key64.length()==8 && text.length()==8) {
+                keys = DES_Utility.generateKeys(DES_Utility.stringToBinary(key64));
+                this.text = DES_Tables.initialPermutation(DES_Utility.stringToBinary(text));
+            }
+            else{
+                System.out.println("Entered values should be 8 characters");
+                System.exit(0);
+            }
         }
         l0 = this.text.substring(0, 32);
         r0 = this.text.substring(32);
